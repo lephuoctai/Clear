@@ -52,7 +52,7 @@ body {
     right: 70px;
     margin-bottom: 1px;
     margin-left: 1px;
-    transition: 0.2s;
+
 }  
 
 .button {
@@ -64,5 +64,20 @@ body {
     border-radius: 50%;
     
     position:absolute;
-    transition: 1s;
+    transition: 0.3s all;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button i {
+    color: var(--backgound-color);
+    rotate: 180deg;
+    transition: 0.2s;
+}
+
+.box:hover .button i {
+    transform: rotate(-135deg);
+    transition: 0.5s;
 }
